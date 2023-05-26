@@ -12,4 +12,8 @@ export class OrderService {
         const orderData = new this.orderModel(data);
         return orderData.save();
     }
+
+    async getAllOrders(): Promise<Order[]> {
+        return this.orderModel.find().exec();
+    }
 }

@@ -31,7 +31,6 @@ export class ToursController {
 
         // this.toursService.generateTours();
         // return this.toursService.getAllTours();
-
     }
 
     @UseGuards(JwtAuthGuard)
